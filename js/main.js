@@ -13,19 +13,25 @@ while (opcion !== "4") {
     let cuaderno = prompt("Ingresa el nombre del cuaderno a agregar:");
     inventario.push(cuaderno);
     console.log("Cuaderno " + cuaderno + " agregado al inventario.");
+  
   } else if (opcion === "2") {  
     let cuaderno = prompt("Ingresa el nombre del cuaderno a eliminar:");
     let index = inventario.indexOf(cuaderno);
+  
     if (index !== -1) {
       inventario.splice(index, 1);
       console.log("Cuaderno " + cuaderno + " eliminado del inventario.");
+  
     } else {
       console.log("El cuaderno no se encontró en el inventario.");
     }
+  
   } else if (opcion === "3") { 
     mostrarInventario();
+  
   } else if (opcion === "4") {  
     console.log("Saliendo del sistema de administración.");
+  
   } else {
     console.log("Opción no válida. Intenta de nuevo.");
   }
