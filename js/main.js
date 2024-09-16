@@ -13,7 +13,7 @@ while (opcion !== "4") {
     let cuaderno = prompt("Ingresa el nombre del cuaderno a agregar:");
     inventario.push(cuaderno);
     console.log("Cuaderno " + cuaderno + " agregado al inventario.");
-  
+   
   } else if (opcion === "2") {  
     let cuaderno = prompt("Ingresa el nombre del cuaderno a eliminar:");
     let index = inventario.indexOf(cuaderno);
